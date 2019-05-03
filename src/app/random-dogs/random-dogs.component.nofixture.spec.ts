@@ -15,7 +15,7 @@ describe('RandomDogsComponent tests without test fixture', () => {
   beforeEach(() => {
     random = new RandomDog();
     random.status = 'success';
-    random.message = 'https://images.dog.ceo/breeds/appenzeller/n02107908_1195.jpg'
+    random.message = 'https://images.dog.ceo/breeds/appenzeller/n02107908_1195.jpg';
 
     http = jasmine.createSpyObj<HttpClient>('http', ['get']);
     http.get.and.returnValue(of(JSON.parse(JSON.stringify(random))));

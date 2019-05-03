@@ -13,6 +13,7 @@
     "polyfills.ts"
   ],
   "include": [
+    "**/*.performance.ts",
     "**/*.spec.ts",
     "**/*.d.ts"
   ]

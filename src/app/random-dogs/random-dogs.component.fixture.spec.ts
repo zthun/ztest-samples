@@ -31,7 +31,7 @@ describe('RandomDogsComponent tests with test fixture', () => {
   beforeEach(() => {
     random = new RandomDog();
     random.status = 'success';
-    random.message = 'https://images.dog.ceo/breeds/appenzeller/n02107908_1195.jpg'
+    random.message = 'https://images.dog.ceo/breeds/appenzeller/n02107908_1195.jpg';
 
     fixture = TestBed.createComponent(RandomDogsComponent);
     component = fixture.componentInstance;
