@@ -1,0 +1,13 @@
+<div>
+  <button class="new-dog-button" mat-raised-button (click)="refresh()">New Dog</button>
+  <button class="old-dog-button" mat-raised-button (click)="reset()">Old Dog</button>
+</div>
+<div *ngIf="loading; then load else show"></div>
+
+<ng-template #load>
+  <mat-spinner></mat-spinner>
+</ng-template>
+
+<ng-template #show>
+  <img [src]="current.message">
+</ng-template>

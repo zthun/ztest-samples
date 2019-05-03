@@ -1,0 +1,6 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link routerLink="/welcome" routerLinkActive="active" #wl="routerLinkActive" [active]="wl.isActive">Welcome</a>
+  <a mat-tab-link routerLink="/dogs" routerLinkActive="active" #dl="routerLinkActive" [active]="dl.isActive">Dogs</a>
+</nav>
+
+<router-outlet></router-outlet>
